@@ -1,14 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Landing_Page from './Components/Landing_Page'
-import Navbar from './Components/Navbar'
+import Navbar from './Components/Navbar/Navbar'
+import LandingPage from './Pages/LandingPage/LandingPage'
 
 function App() {
   return (
     <>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<Landing_Page/>}/>
+      <Route path='/' element={<LandingPage/>}/>
     </Routes>
     </>
   )
